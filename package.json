@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "preserve": "npm run start",
+    "serve": "node_modules/.bin/webpack-dev-server --content-base ./"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +22,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "style-loader": "^0.18.2",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
     "uuid": "^3.1.0"
