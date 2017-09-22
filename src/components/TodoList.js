@@ -5,10 +5,8 @@ const TodoList = props => {
     return (
         <div>
             <ul className={style.TodoList}>
-                {
-                    this.props.data.map( props => {
-                        return <TodoList key={props.id} id={props.id} text={props.text} remove={props.removeTodo}/>
-                    }
+                {props.data.map(props => 
+                    <li key={props.id} id={props.id}>{props.text}</li>
                 )}
             </ul>
         </div>
