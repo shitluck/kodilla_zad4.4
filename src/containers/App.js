@@ -7,6 +7,7 @@ import TodoList from '../components/TodoList';
 class App extends React.Component {
     constructor(props){
         super(props);
+        this.removeTodo = this.removeTodo.bind(this);
         this.state = {
             data: [{
                 id: 1,

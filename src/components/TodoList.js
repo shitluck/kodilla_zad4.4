@@ -5,8 +5,8 @@ const TodoList = props => {
     return (
         <div className={style.TodoList}>
             <ul>
-                {props.data.map(props => 
-                    <li key={props.id} id={props.id}>{props.text}</li>
+                {props.data.map(({id, text} = props) =>
+                    <li key={id} onClick={e => props.remove(id)}>{text}</li>
                 )}
             </ul>
         </div>
