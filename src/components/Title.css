@@ -8,9 +8,9 @@
 }
 
 .Title > div {
-	background: #B5D6CD;
 	width: 300px;
 	margin: 0 auto;
 	padding: 15px;
-	font-size: 30px;	
+	font-size: 30px;
+	background-color: #B5D6CD;
 }
