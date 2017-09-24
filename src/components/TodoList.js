@@ -3,8 +3,8 @@ import style from './TodoList.css';
 
 const TodoList = props => {
     return (
-        <div>
-            <ul className={style.TodoList}>
+        <div className={style.TodoList}>
+            <ul>
                 {props.data.map(({id, text} = props) =>
                     <li key={id} onClick={e => props.remove(id)}>{text}</li>
                 )}
